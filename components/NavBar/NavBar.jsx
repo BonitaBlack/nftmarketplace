@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import Image from "next/image";
-import { DiJqueryLogo } from "react-icons/di";
 //----IMPORT ICON
 import { MdNotifications } from "react-icons/md";
 import { BsSearch } from "react-icons/bs";
@@ -30,13 +29,23 @@ const NavBar = () => {
   const openMenu = (e) => {
     const btnText = e.target.innerText;
     if (btnText == "Discover") {
-      setDiscover(true);
+      if (discover) {
+        setDiscover(false);
+      }
+      else {
+        setDiscover(true);
+      }
       setHelp(false);
       setNotification(false);
       setProfile(false);
     } else if (btnText == "Help Center") {
       setDiscover(false);
-      setHelp(true);
+      if (help) {
+        setHelp(false);
+      }
+      else {
+        setHelp(true);
+      }
       setNotification(false);
       setProfile(false);
     } else {
@@ -87,7 +96,12 @@ const NavBar = () => {
       <div className={Style.navbar_container}>
         <div className={Style.navbar_container_left}>
           <div className={Style.logo}>
-            <DiJqueryLogo onClick={() => router.push("/")} />
+            <Image
+                src={images.oasis_icon}
+                alt="Logo"
+                width={100}
+                height={100}
+              />
           </div>
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
@@ -104,7 +118,7 @@ const NavBar = () => {
             <p onClick={(e) => openMenu(e)}>Discover</p>
             {discover && (
               <div className={Style.navbar_container_right_discover_box}>
-                <Discover />
+                <Discover setOpenDiscover={setDiscover}/>
               </div>
             )}
           </div>
@@ -114,7 +128,7 @@ const NavBar = () => {
             <p onClick={(e) => openMenu(e)}>Help Center</p>
             {help && (
               <div className={Style.navbar_container_right_help_box}>
-                <HelpCenter />
+                <HelpCenter setOpenHelp={setHelp}/>
               </div>
             )}
           </div>
@@ -168,9 +182,10 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDBAR CPMPONE/NT */}
+      {/* SIDBAR COMPONENT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
+          {/* Send PROPS to SideBar.jsx */}
           <SideBar
             setOpenSideMenu={setOpenSideMenu}
             currentAccount={currentAccount}

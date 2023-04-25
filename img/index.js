@@ -20,6 +20,8 @@ import user7 from "./user-7.png";
 import user8 from "./user-8.png";
 import user9 from "./user-9.png";
 import user10 from "./user-10.png";
+import oasis from "./oasis.png";
+import oasis_icon from "./OasisIcon.svg";
 import service1 from "./service-1.png";
 import service2 from "./service-2.png";
 import service3 from "./service-3.png";
@@ -101,6 +103,8 @@ export default {
   user8,
   user9,
   user10,
+  oasis,
+  oasis_icon,
   service1,
   service2,
   service3,

@@ -41,20 +41,20 @@
 
 /* //THEME 2 */
 :root{
-  --icons-color: #FFDF2B;
+  --icons-color: #0c79d3;
   --icons-light-color: #ffdf2b57;
-  --icons-bg-color: #FFDF2B;
-  --shadow-dark-color: #555557;
-  --bg-shadow-dark-color: #555557;
-  --shadow-light-color: #232325;
-  --main-bg-color: #232325;
-  --overlay: #2323255e;
+  --icons-bg-color: #0c79d3;
+  --shadow-dark-color: #0ae9e9;
+  --bg-shadow-dark-color: #0dc5e6;
+  --shadow-light-color: #0ae9e9;
+  --main-bg-color: #0dc5e6;
+  --overlay: #0dc5e6;
 
-  --box-shadow: 1px 1px 2px #FFDF2B,
-  -1px -1px 2px #FFDF2B;
+  --box-shadow: 1px 1px 2px aqua,
+  -1px -1px 2px aqua;
 
-  --box-shadow-2:1px 1px 2px #FFDF2B,
-  -1px -1px 2px #FFDF2B;
+  --box-shadow-2:1px 1px 2px aqua,
+  -1px -1px 2px aqua;
 
 }
 

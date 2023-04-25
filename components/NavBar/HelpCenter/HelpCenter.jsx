@@ -4,7 +4,12 @@ import Link from "next/link";
 //INTERNAL IMPORT
 import Style from "./HelpCenter.module.css";
 
-const HelpCenter = () => {
+const HelpCenter = ({setOpenHelp}) => {
+
+  const closeHelpMenu = () => {
+    setOpenHelp(false);
+  };
+
   const helpCenter = [
     {
       name: "About",
@@ -31,7 +36,9 @@ const HelpCenter = () => {
     <div className={Style.box}>
       {helpCenter.map((el, i) => (
         <div className={Style.helpCenter} key={i + 1}>
-          <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
+          <Link href={{ pathname: `${el.link}` }} legacyBehavior>
+            <a onClick={() => closeHelpMenu()}>{el.name}</a>
+          </Link>
         </div>
       ))}
     </div>

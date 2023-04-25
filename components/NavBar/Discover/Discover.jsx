@@ -4,8 +4,13 @@ import Link from "next/link";
 //INTERNAL IMPORT
 import Style from "./Discover.module.css";
 
-const Discover = () => {
+const Discover = ({setOpenDiscover}) => {
   //--------DISCOVER NAVIGATION MENU
+  
+  const closeDiscoverMenu = () => {
+      setOpenDiscover(false);
+  };
+  
   const discover = [
     {
       name: "Collection",
@@ -44,7 +49,9 @@ const Discover = () => {
     <div>
       {discover.map((el, i) => (
         <div key={i + 1} className={Style.discover}>
-          <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
+          <Link href={{ pathname: `${el.link}` }} legacyBehavior>
+            <a onClick={() => closeDiscoverMenu()}>{el.name}</a>
+          </Link>
         </div>
       ))}
     </div>

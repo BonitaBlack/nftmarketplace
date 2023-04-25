@@ -20,6 +20,7 @@ import images from "../../../img";
 import Button from "../../Button/Button";
 import { Router } from "next/router";
 
+// Receive PROPS from NavBar.jsx
 const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
   //------USESTATE
   const [openDiscover, setOpenDiscover] = useState(false);
