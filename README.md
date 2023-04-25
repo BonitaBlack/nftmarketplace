@@ -24,7 +24,7 @@ npx hardhat run scripts/deploy.js
 
 Install all requirements listed under https://docs.oasis.io/dapp/emerald/writing-dapps-on-emerald#create-dapp-on-emerald-with-hardhat
 
-Run the npm update command in both folders -> (nftsmartcontract, nftfrontend)
+Run the npm update command
 ```shell
 npm update
 ```
@@ -32,7 +32,6 @@ npm update
 # Steps to run the Frontend
 
 ```shell
-cd nftfrontend
 npm run dev
 ```
 
@@ -41,7 +40,6 @@ Then open http://localhost:3000 in a webbrowser
 # Steps to compile and deploy the smart contract
 
 ```shell
-cd nftsmartcontracts
 npx hardhat compile
 npx hardhat run scripts/deploy.js
 ```

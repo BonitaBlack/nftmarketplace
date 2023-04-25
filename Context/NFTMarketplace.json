@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
   "contractName": "NFTMarketplace",
-  "sourceName": "contracts/NFTMarketplace.sol",
+  "sourceName": "contracts/NFTMarketPlace.sol",
   "abi": [
     {
       "inputs": [],
