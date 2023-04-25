@@ -22,6 +22,8 @@ import user9 from "./user-9.png";
 import user10 from "./user-10.png";
 import oasis from "./oasis.png";
 import oasis_icon from "./OasisIcon.svg";
+import oasis_networks from "./oasis_networks.jpeg";
+import rose from "./rose.webp";
 import service1 from "./service-1.png";
 import service2 from "./service-2.png";
 import service3 from "./service-3.png";
@@ -105,6 +107,8 @@ export default {
   user10,
   oasis,
   oasis_icon,
+  oasis_networks,
+  rose,
   service1,
   service2,
   service3,

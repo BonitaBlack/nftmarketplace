@@ -97,10 +97,10 @@ const NavBar = () => {
         <div className={Style.navbar_container_left}>
           <div className={Style.logo}>
             <Image
-                src={images.oasis_icon}
+                src={images.rose}
                 alt="Logo"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
           </div>
           <div className={Style.navbar_container_left_box_input}>
