@@ -44,3 +44,18 @@
         font-size: 3rem;
     }
 }
+
+.coolImageWrapper {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  .coolImage {
+    transition: transform 0.5s ease-out;
+    border-radius: 20px;
+  }
+  
+  .coolImage:hover {
+    transform: rotateY(-15deg) translateZ(50px) scale(1.1);
+    border-radius: 0;
+  }

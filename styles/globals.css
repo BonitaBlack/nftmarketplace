@@ -42,13 +42,13 @@
 /* //THEME 2 */
 :root{
   --icons-color: #0c79d3;
-  --icons-light-color: #ffdf2b57;
+  --icons-light-color: #0ca4d3;
   --icons-bg-color: #0c79d3;
-  --shadow-dark-color: #0ae9e9;
+  --shadow-dark-color: aqua; 
   --bg-shadow-dark-color: #0dc5e6;
   --shadow-light-color: #0ae9e9;
   --main-bg-color: #131112;
-  --overlay: #0dc5e6;
+  --overlay: #131112;
 
   --box-shadow: 1px 1px 2px aqua,
   -1px -1px 2px aqua;

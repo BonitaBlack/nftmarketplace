@@ -10,20 +10,18 @@ import creatorbackground8 from "./creatorbackground-8.jpg";
 import creatorbackground9 from "./creatorbackground-9.jpg";
 import creatorbackground10 from "./creatorbackground-10.jpg";
 import creatorbackground11 from "./creatorbackground-11.jpg";
-import user1 from "./user-1.png";
-import user2 from "./user-2.png";
-import user3 from "./user-3.png";
-import user4 from "./user-4.png";
-import user5 from "./user-5.png";
-import user6 from "./user-6.png";
-import user7 from "./user-7.png";
-import user8 from "./user-8.png";
-import user9 from "./user-9.png";
-import user10 from "./user-10.png";
-import oasis from "./oasis.png";
+import user1 from "./user-1.webp";
+import user2 from "./user-2.webp";
+import user3 from "./user-3.webp";
+import user4 from "./user-4.webp";
+import user5 from "./user-5.webp";
+import user6 from "./user-6.webp";
+import user7 from "./user-7.webp";
+import user8 from "./user-8.webp";
+import user9 from "./user-9.webp";
+import user10 from "./user-10.webp";
 import oasis_icon from "./OasisIcon.svg";
-import oasis_networks from "./oasis_networks.jpeg";
-import rose from "./rose.webp";
+import oasis from "./oasis.webp";
 import service1 from "./service-1.png";
 import service2 from "./service-2.png";
 import service3 from "./service-3.png";
@@ -38,6 +36,7 @@ import vimeo from "./vimeo.svg";
 import vector from "./VectorHIW.svg";
 import zgcmq from "./zgcmq.svg";
 import hero from "./hero.png";
+import hero3 from "./hero3.webp";
 import nft_1 from "./nft_1.png";
 import getAble from "./getable.png";
 import nft_image_1 from "./nft-image-1.png";
@@ -84,6 +83,7 @@ export default {
   getAble,
   nft_1,
   hero,
+  hero3,
   creatorbackground1,
   creatorbackground2,
   creatorbackground3,
@@ -105,10 +105,8 @@ export default {
   user8,
   user9,
   user10,
-  oasis,
   oasis_icon,
-  oasis_networks,
-  rose,
+  oasis,
   service1,
   service2,
   service3,

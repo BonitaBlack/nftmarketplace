@@ -97,7 +97,7 @@ const NavBar = () => {
         <div className={Style.navbar_container_left}>
           <div className={Style.logo}>
             <Image
-                src={images.rose}
+                src={images.oasis}
                 alt="Logo"
                 width={150}
                 height={150}

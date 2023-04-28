@@ -79,7 +79,7 @@ const connectToTransferFunds = async () => {
 export const NFTMarketplaceContext = React.createContext();
 
 export const NFTMarketplaceProvider = ({ children }) => {
-  const titleData = "Discover, collect, and sell NFTs on Oasis";
+  const titleData = "Discover, collect, and sell NFTs on Oasis Networks";
 
   //------USESTAT
   const [error, setError] = useState("");
